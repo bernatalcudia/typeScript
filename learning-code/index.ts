@@ -29,11 +29,23 @@ function anyFunction(anyParam: any) {
 }
 //----------------------------------------------------------------------------
 // Object types
-//Interface
+//Interface person
 interface Person {
     name: string;
     age: number;
 }
 function greet(person: Person) {
     return 'Hello ' + person;
+}
+//Class car
+class Car {
+    make: string;
+    model: string;
+    year: number;
+    constructor(make: string, model: string, year: number) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+
+    }
 }
