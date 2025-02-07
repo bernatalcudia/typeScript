@@ -1,3 +1,4 @@
+//Primitive Types
 //booleans
 let isTrue: boolean = true;
 let isFalse: boolean = false;
@@ -26,4 +27,13 @@ function doSomething(stringOrNull: string | null) {
 function anyFunction(anyParam: any) {
     console.log('Any type: ' + anyParam)
 }
-
+//----------------------------------------------------------------------------
+// Object types
+//Interface
+interface Person {
+    name: string;
+    age: number;
+}
+function greet(person: Person) {
+    return 'Hello ' + person;
+}
