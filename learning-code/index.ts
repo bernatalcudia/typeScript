@@ -10,8 +10,16 @@ let stringValue: string = 'Bernat Alcudia';
 function voidFunction(): void {
     return;
 }
-//function multiply
+//function multiply number
 function multiply(numberOne: number, numberTwo: number) {
     return numberOne * numberTwo;
+}
+//function undefined
+function doSomething(stringOrNull: string | null) {
+    if (stringOrNull === null) {
+        //do nothing
+    } else {
+        console.log('Hello, ' + stringOrNull.toUpperCase());
+    }
 }
 
