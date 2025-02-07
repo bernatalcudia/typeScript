@@ -14,12 +14,16 @@ function voidFunction(): void {
 function multiply(numberOne: number, numberTwo: number) {
     return numberOne * numberTwo;
 }
-//function undefined
+//function undefined and null
 function doSomething(stringOrNull: string | null) {
     if (stringOrNull === null) {
         //do nothing
     } else {
         console.log('Hello, ' + stringOrNull.toUpperCase());
     }
+}
+//function any
+function anyFunction(anyParam: any) {
+    console.log('Any type: ' + anyParam)
 }
 
