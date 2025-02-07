@@ -7,6 +7,11 @@ let floatValue: number = 3.14;
 //string
 let stringValue: string = 'Bernat Alcudia';
 //function void not return value
-function voidFunction() {
+function voidFunction(): void {
     return;
 }
+//function multiply
+function multiply(numberOne: number, numberTwo: number) {
+    return numberOne * numberTwo;
+}
+
