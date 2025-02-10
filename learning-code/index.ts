@@ -96,3 +96,7 @@ anyValue = "Hello, world";
 anyValue = true;
 //As Const
 const colors = ["red", "green", "blue"] as const;
+
+//Non null assertion
+let name2: string | null = null;
+let nameLength = name2!.length;
