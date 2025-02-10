@@ -105,6 +105,7 @@ let nameLength = name2!.length;
 function combine(input1: string | number, input2: string | number) {
 
 }
+//Combining Types
 //Intersection Types
 // type typeAB = typeA & typeB;
 
@@ -121,3 +122,26 @@ interface User2 {
 }
 type UserKeys = keyof User2;
 const key: UserKeys = "name";
+//Type Guards
+//instanceof operator
+class Bird {
+    age: number;
+    wings: string;
+    constructor(age: number, wings: string) {
+        this.age = age;
+        this.wings = wings;
+    }
+    fly() {
+        console.log("flying...");
+    }
+    layEggs() {
+        console.log("laying eggs...")
+    }
+}
+const pet = new Bird(15, "black");
+
+if (pet instanceof Bird) {
+    pet.fly();
+} else {
+    console.log("pet is not a bird")
+}
