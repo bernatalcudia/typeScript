@@ -71,3 +71,15 @@ const first = pair[0];
 const second = pair[1];
 //Any
 let obj: any = { x: 0 };
+//Never
+function error(message: string): never {
+    throw new Error(message);
+}
+function fail() {
+    return error("Something failed");
+}
+function infiniteLoop(): never {
+    while (true) {
+
+    }
+}
