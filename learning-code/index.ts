@@ -94,3 +94,5 @@ let anyValue: any = 42;
 
 anyValue = "Hello, world";
 anyValue = true;
+//As Const
+const colors = ["red", "green", "blue"] as const;
