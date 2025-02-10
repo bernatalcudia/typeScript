@@ -62,3 +62,10 @@ enum Direction {
 }
 //Array
 const numbers: number[] = [1, 2, 3, 4];
+
+type stringNumberPair = [string, number];
+
+const pair: stringNumberPair = ["hi", 7];
+
+const first = pair[0];
+const second = pair[1];
