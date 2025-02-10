@@ -100,3 +100,8 @@ const colors = ["red", "green", "blue"] as const;
 //Non null assertion
 let name2: string | null = null;
 let nameLength = name2!.length;
+
+//Union Types
+function combine(input1: string | number, input2: string | number) {
+
+}
