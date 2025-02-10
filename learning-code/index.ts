@@ -145,3 +145,10 @@ if (pet instanceof Bird) {
 } else {
     console.log("pet is not a bird")
 }
+//typeof Operator
+let value: string | number = "hi";
+if (typeof value === "string") {
+    console.log("value is a string");
+} else {
+    console.log("value is a number");
+}
