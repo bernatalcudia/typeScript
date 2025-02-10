@@ -105,3 +105,11 @@ let nameLength = name2!.length;
 function combine(input1: string | number, input2: string | number) {
 
 }
+//Intersection Types
+// type typeAB = typeA & typeB;
+
+//Type Aliases
+type Name = string;
+type Age = number;
+type User = { name: Name, age: Age };
+const user: User = { name: "Jhon", age: 30 };
