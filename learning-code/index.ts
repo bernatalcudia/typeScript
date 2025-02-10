@@ -50,7 +50,7 @@ class Car {
     }
 
     drive() {
-        console.log("Driving my" + this.year + this.make + this.model)
+        console.log("Driving my" + this.year + this.make + this.model);
     }
 }
 //Enum
@@ -60,3 +60,5 @@ enum Direction {
     Left = 3,
     Right = 4
 }
+//Array
+const numbers: number[] = [1, 2, 3, 4];
