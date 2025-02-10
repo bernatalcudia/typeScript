@@ -113,3 +113,11 @@ type Name = string;
 type Age = number;
 type User = { name: Name, age: Age };
 const user: User = { name: "Jhon", age: 30 };
+//keyof Operator
+interface User2 {
+    name: string;
+    age: number;
+    location: string;
+}
+type UserKeys = keyof User2;
+const key: UserKeys = "name";
