@@ -48,4 +48,8 @@ class Car {
         this.year = year;
 
     }
+
+    drive() {
+        console.log("Driving my" + this.year + this.make + this.model)
+    }
 }
