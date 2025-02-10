@@ -83,9 +83,14 @@ function infiniteLoop(): never {
 
     }
 }
-
+//Assertions
 //As type
 let someValue: any = "Hello, TypeScript!";
 let strLength: number = (someValue as string).length;
 
 console.log(strLength);
+//As any
+let anyValue: any = 42;
+
+anyValue = "Hello, world";
+anyValue = true;
