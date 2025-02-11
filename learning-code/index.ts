@@ -256,3 +256,9 @@ function add1(a: string, b: string): string;
 function add1(a: any, b: any): any {
     return a + b;
 }
+//Classes
+//Constructor Params
+class Example {
+    constructor(private name: string, public age: number) {//public,private,protected
+    }
+}
