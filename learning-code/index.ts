@@ -162,3 +162,10 @@ function example(x: string | number, y: string | boolean) {
         console.log(y);
     }
 }
+//Truthiness
+function getUsersOnlineMessage(numUsersOnline: number) {
+    if (numUsersOnline) {
+        return `There are ${numUsersOnline} online now!`;
+    }
+    return "Nobodys here:(";
+}
