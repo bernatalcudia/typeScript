@@ -169,3 +169,14 @@ function getUsersOnlineMessage(numUsersOnline: number) {
     }
     return "Nobodys here:(";
 }
+//Type Predicates
+function isString(value: unknown): value is string {
+    return typeof value === "string";
+}
+function example1(x: unknown) {
+    if (isString(x)) {
+        x.toUpperCase();
+    } else {
+        console.log(x);
+    }
+}
