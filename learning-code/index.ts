@@ -275,3 +275,21 @@ class Dog extends Animal {
         console.log("bark")
     }
 }
+
+//Inheritance vs Polymorphism
+class Animal1 {
+    makeSound(): void {
+        console.log("animal making a sound")
+    }
+}
+class Dog1 extends Animal1 {
+    makeSound(): void {
+        console.log("bark")
+    }
+}
+class Cat extends Animal1 {
+    makeSound(): void {
+        console.log("meow")
+    }
+}
+let animal = Animal1;
