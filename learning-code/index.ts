@@ -259,6 +259,19 @@ function add1(a: any, b: any): any {
 //Classes
 //Constructor Params
 class Example {
-    constructor(private name: string, public age: number) {//public,private,protected
+    constructor(private name: string, public age: number) {//Access Modifiers:public,private,protected
+    }
+}
+//Abstract Classes
+abstract class Animal {
+    abstract makeSound(): void;
+
+    move(): void {
+        console.log("moving...")
+    }
+}
+class Dog extends Animal {
+    makeSound(): void {
+        console.log("bark")
     }
 }
