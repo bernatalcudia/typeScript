@@ -222,3 +222,13 @@ myGenericNumber.zeroValue = 0;
 myGenericNumber.add = function (x, y) {
     return x + y;
 };
+//Generic Constraints
+interface Lengthwise {
+    length: number;
+}
+function loggingIdentity<T extends Lengthwise>(arg: T): T {
+    console.log(arg.length);
+
+    return arg;
+}
+loggingIdentity({ length: 10, value: 3 });
