@@ -180,3 +180,17 @@ function example1(x: unknown) {
         console.log(x);
     }
 }
+//Interfaces
+//Extending Interfaces
+interface Shape {
+    width: number;
+    height: number;
+}
+interface Square extends Shape {
+    sideLength: number;
+}
+let Square = {
+    with: 10,
+    height: 10,
+    sideLength: 10,
+};
