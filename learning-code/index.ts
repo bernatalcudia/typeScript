@@ -232,3 +232,20 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
     return arg;
 }
 loggingIdentity({ length: 10, value: 3 });
+//TypeScript Functions
+//Typing Functions
+
+//Function declaration with types:
+function add(a: number, b: number): number {
+    return a + b;
+}
+// Arrow function with types:
+const multiply2 = (a: number, b: number): number => {
+    return a * b;
+}
+//Function type:
+let divide: (a: number, b: number) => number;
+
+divide = (a, b) => {
+    return a / b;
+};
