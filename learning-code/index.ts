@@ -194,3 +194,16 @@ let Square = {
     height: 10,
     sideLength: 10,
 };
+//Hybrid Types
+type StringOrNumber = string | number;
+type Education = {
+    degree: string;
+    school: string;
+    year: number;
+};
+type User3 = {
+    name: string;
+    age: number;
+    email: string;
+    education: Education;
+}
