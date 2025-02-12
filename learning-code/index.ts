@@ -270,6 +270,8 @@ abstract class Animal {
         console.log("moving...")
     }
 }
+// Method Overriding
+
 class Dog extends Animal {
     makeSound(): void {
         console.log("bark")
@@ -293,3 +295,13 @@ class Cat extends Animal1 {
     }
 }
 let animal = Animal1;
+// Constructor Overloading
+class Point {
+    //Overloads
+    constructor(x: number, y: string);
+    constructor(s: string);
+    constructor(xs: any, y?: any) {
+
+    }
+
+}
