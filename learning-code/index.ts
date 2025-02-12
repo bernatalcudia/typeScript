@@ -322,3 +322,15 @@ function createThree(three: Partial<Three>): Three {
 }
 const newThree = createThree({ seed: 32 });
 console.log(newThree);
+//Pick
+interface Todo {
+    title: string;
+    description: string;
+    completed: boolean;
+}
+type TodoPreview = Pick<Todo, "title" | "completed">;
+
+const todo: TodoPreview = {
+    title: "Order Room",
+    completed: true,
+};
