@@ -342,3 +342,10 @@ const todo1: TodoOmit = {
     description: "back",
     completed: true,
 };
+
+//Readonly
+const todo2: Readonly<Todo> = {
+    title: "dark",
+    description: "souls",
+    completed: true,
+};
