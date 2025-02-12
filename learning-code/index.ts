@@ -303,5 +303,22 @@ class Point {
     constructor(xs: any, y?: any) {
 
     }
-
 }
+// Utility Types
+//Partial
+interface Three {
+    seed: number,
+    leaf: string,
+    fruit: boolean
+}
+
+function createThree(three: Partial<Three>): Three {
+    return {
+        seed: 55,
+        leaf: "dark",
+        fruit: false,
+        ...three,
+    };
+}
+const newThree = createThree({ seed: 32 });
+console.log(newThree);
