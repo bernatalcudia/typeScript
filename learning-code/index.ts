@@ -328,9 +328,17 @@ interface Todo {
     description: string;
     completed: boolean;
 }
-type TodoPreview = Pick<Todo, "title" | "completed">;
 
-const todo: TodoPreview = {
+type TodoPick = Pick<Todo, "title" | "completed">;
+
+const todo: TodoPick = {
     title: "Order Room",
+    completed: true,
+};
+//Omit
+type TodoOmit = Omit<Todo, "title">;
+
+const todo1: TodoOmit = {
+    description: "back",
     completed: true,
 };
