@@ -438,3 +438,9 @@ type Age1=42;
 
 let age:Age1 = 42;//ok
 // let age:Age1=31; //error this variable value = 42
+
+//Template Literal Types
+type NameTemplate = `Mr. ${string}`;
+
+let nameTemplate:Name = `Mr. Smith`;//ok
+// let nameTemplate:Name=`Mrs. Smith`  error
