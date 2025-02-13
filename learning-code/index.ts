@@ -369,6 +369,7 @@ type T2 = Exclude<string | number | (() => void), Function>; // string | number
 
 //Extract
 type T01 = Extract<"a" | "b" | "c", "a" | "f">;//=a
+
 // Awaited
 type A = Awaited<Promise<string>>;
 //type A = string
@@ -394,6 +395,7 @@ type anyParam = Parameters<any>;
 //type anyParam = unknown[]
 type neverParam = Parameters<never>;
 //type neverParam = never
+
 // Non Nullable
 type noNull = NonNullable<string | number | undefined>;
 // type noNull = string | number
@@ -416,3 +418,13 @@ type CAs = InstanceType<typeof CA>;
 //type  CAs = CA
 type instanceAny = InstanceType<any>;
 // type instanceAny = any
+
+// Advanced Types
+
+// Mapped Types
+type Readonly1<T> = {
+readonly[P in keyof T]:T[P];
+};
+
+let obj1 = {x:10,y:20};
+let readonlyObj: Readonly1<typeof obj> = obj;
