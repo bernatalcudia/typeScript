@@ -83,6 +83,7 @@ function infiniteLoop(): never {
 
     }
 }
+//----------------------------------------------------------------------------
 //Assertions
 //As type
 let someValue: any = "Hello, TypeScript!";
@@ -105,6 +106,7 @@ let nameLength = name2!.length;
 function combine(input1: string | number, input2: string | number) {
 
 }
+//----------------------------------------------------------------------------
 //Combining Types
 //Intersection Types
 // type typeAB = typeA & typeB;
@@ -122,6 +124,7 @@ interface User2 {
 }
 type UserKeys = keyof User2;
 const key: UserKeys = "name";
+//----------------------------------------------------------------------------
 //Type Guards
 //instanceof operator
 class Bird {
@@ -180,6 +183,7 @@ function example1(x: unknown) {
         console.log(x);
     }
 }
+//----------------------------------------------------------------------------
 //Interfaces
 //Extending Interfaces
 interface Shape {
@@ -207,6 +211,7 @@ type User3 = {
     email: string;
     education: Education;
 }
+//----------------------------------------------------------------------------
 //Generics
 //Generic Types
 function identity<T>(arg: T): T {
@@ -232,6 +237,7 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
     return arg;
 }
 loggingIdentity({ length: 10, value: 3 });
+//----------------------------------------------------------------------------
 //TypeScript Functions
 //Typing Functions
 
@@ -256,6 +262,7 @@ function add1(a: string, b: string): string;
 function add1(a: any, b: any): any {
     return a + b;
 }
+//----------------------------------------------------------------------------
 //Classes
 //Constructor Params
 class Example {
@@ -304,6 +311,7 @@ class Point {
 
     }
 }
+//----------------------------------------------------------------------------
 // Utility Types
 //Partial
 interface Three {
@@ -418,7 +426,7 @@ type CAs = InstanceType<typeof CA>;
 //type  CAs = CA
 type instanceAny = InstanceType<any>;
 // type instanceAny = any
-
+//----------------------------------------------------------------------------
 // Advanced Types
 
 // Mapped Types
