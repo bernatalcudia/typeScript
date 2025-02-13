@@ -399,3 +399,10 @@ type noNull = NonNullable<string | number | undefined>;
 // type noNull = string | number
 type noNull1 = NonNullable<string[] | null | undefined>;
 // type noNull1 = string[]
+
+// ReturnType
+type T20 = ReturnType<() => string>;
+// type T0 = string
+
+type T11 = ReturnType<(s: string) => void>;
+// type T1 = void
