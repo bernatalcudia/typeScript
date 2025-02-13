@@ -394,3 +394,8 @@ type anyParam = Parameters<any>;
 //type anyParam = unknown[]
 type neverParam = Parameters<never>;
 //type neverParam = never
+// Non Nullable
+type noNull = NonNullable<string | number | undefined>;
+// type noNull = string | number
+type noNull1 = NonNullable<string[] | null | undefined>;
+// type noNull1 = string[]
