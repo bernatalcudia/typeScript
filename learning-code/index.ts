@@ -428,3 +428,7 @@ readonly[P in keyof T]:T[P];
 
 let obj1 = {x:10,y:20};
 let readonlyObj: Readonly1<typeof obj> = obj;
+// Conditional Types
+type Extends<T,U> = T extends U ? T:U;
+type A1 = Extends<string,any>;  //type A1 is "string"
+type B1 =Extends<any,string>;   //type B1 is "string"
