@@ -406,3 +406,13 @@ type T20 = ReturnType<() => string>;
 
 type T11 = ReturnType<(s: string) => void>;
 // type T1 = void
+
+// InstanceType
+class CA {
+X=0;
+Y=0;
+}
+type CAs = InstanceType<typeof CA>;
+//type  CAs = CA
+type instanceAny = InstanceType<any>;
+// type instanceAny = any
