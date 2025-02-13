@@ -369,3 +369,10 @@ type T2 = Exclude<string | number | (() => void), Function>; // string | number
 
 //Extract
 type T01 = Extract<"a" | "b" | "c", "a" | "f">;//=a
+// Awaited
+type A = Awaited<Promise<string>>;
+//type A = string
+type B = Awaited<Promise<Promise<number>>>;
+//type B = number
+type C = Awaited<boolean | Promise<number>>;
+//type C = number | boolean
