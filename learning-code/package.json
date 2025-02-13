@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/bernatalcudia/typeScript/issues"
   },
-  "homepage": "https://github.com/bernatalcudia/typeScript#readme"
+  "homepage": "https://github.com/bernatalcudia/typeScript#readme",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
 }
