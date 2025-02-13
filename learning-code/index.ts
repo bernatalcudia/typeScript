@@ -376,3 +376,21 @@ type B = Awaited<Promise<Promise<number>>>;
 //type B = number
 type C = Awaited<boolean | Promise<number>>;
 //type C = number | boolean
+
+// Parameters
+type text = Parameters<() => string>;
+//type text = []
+type textParam = Parameters<(s: string) => void>;
+//type textParam = [s: string]
+type textArg = Parameters<<T>(arg:T)=>T>;
+//type textArg = [arg:unknown]
+declare function f1(arg:{a:number,b:string}):void;
+type numberString = Parameters<typeof f1>;
+//type numberString = [arg:{
+// a:number;
+// b:string;
+// }]
+type anyParam = Parameters<any>;
+//type anyParam = unknown[]
+type neverParam = Parameters<never>;
+//type neverParam = never
