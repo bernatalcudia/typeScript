@@ -432,3 +432,9 @@ let readonlyObj: Readonly1<typeof obj> = obj;
 type Extends<T,U> = T extends U ? T:U;
 type A1 = Extends<string,any>;  //type A1 is "string"
 type B1 =Extends<any,string>;   //type B1 is "string"
+
+// Literal Types
+type Age1=42;
+
+let age:Age1 = 42;//ok
+// let age:Age1=31; //error this variable value = 42
